@@ -40,6 +40,7 @@ pub mod constants;
 mod dev;
 mod op;
 mod op_sepolia;
+mod subnet_zero_testnet;
 
 #[cfg(feature = "superchain-configs")]
 mod superchain;
@@ -52,6 +53,7 @@ pub use basefee::*;
 pub use dev::OP_DEV;
 pub use op::OP_MAINNET;
 pub use op_sepolia::OP_SEPOLIA;
+pub use subnet_zero_testnet::SUBNET_ZERO_TESTNET;
 
 /// Re-export for convenience
 pub use reth_optimism_forks::*;

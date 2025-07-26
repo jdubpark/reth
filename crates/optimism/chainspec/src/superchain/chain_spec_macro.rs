@@ -79,6 +79,8 @@ macro_rules! create_superchain_specs {
                 "base",
                 "base_sepolia",
                 "base-sepolia",
+                "subnet_zero_testnet",
+                "subnet-zero-testnet",
                 $(
                     $crate::key_for!($name, $env),
                 )+
@@ -93,6 +95,7 @@ macro_rules! create_superchain_specs {
                     "optimism_sepolia" | "optimism-sepolia" => Some($crate::OP_SEPOLIA.clone()),
                     "base"                                  => Some($crate::BASE_MAINNET.clone()),
                     "base_sepolia" | "base-sepolia"         => Some($crate::BASE_SEPOLIA.clone()),
+                    "subnet_zero_testnet" | "subnet-zero-testnet" => Some($crate::SUBNET_ZERO_TESTNET.clone()),
                     $(
                         $crate::key_for!($name, $env)        => Some($crate::[<$name:upper _ $env:upper>].clone()),
                     )+
