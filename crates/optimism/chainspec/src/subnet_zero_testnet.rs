@@ -21,7 +21,7 @@ pub static SUBNET_ZERO_TESTNET: LazyLock<Arc<OpChainSpec>> = LazyLock::new(|| {
             chain: Chain::from_id(131513),
             genesis_header: SealedHeader::new(
                 make_op_genesis_header(&genesis, &hardforks),
-                b256!("0x0f8b2a48d80dbe6cc70a8ee09defec1478bfbe92d39c6de7c581e10c14c3f4ef"),
+                b256!("0x40882debb1677718942ae07c4163a7f6b5649aa6864ffcd2c48cd760230a752f"),
             ),
             genesis,
             paris_block_and_final_difficulty: Some((0, U256::from(0))),
